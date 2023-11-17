@@ -2,4 +2,93 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  outline: 1px solid red;
 }
+
+body {
+  background-color: #F5F5F5;
+}
+
+/*==================== header section ====================*/
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.navbar-nav .nav-link,
+.navbar-brand {
+  color: #fff;
+}
+
+header {
+  background-image: url(../img/hero-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.text-typing {
+  font-size: 1.8rem;
+  font-weight: 700;
+  width: 145px;
+  text-align: center;
+  position: relative;
+  animation: text-typing all 3s linear infinite alternate slidein;;
+  overflow: hidden;
+  
+}
+
+@keyframes text-typing {
+  0%{
+    .text-typing{
+      width: 145px;
+    }
+  }
+  20%{
+    .text-typing{
+      width: 120px;
+    }
+  }
+  40%{
+    .text-typing{
+      width: 100px;
+    }
+  }
+  60%{
+    .text-typing{
+      width: 70px;
+    }
+  }
+  80%{
+    .text-typing{
+      width: 30px;
+    }
+  }
+  100%{
+    .text-typing{
+      width: 0px;
+    }
+  }
+}
+
+.text-container h1 {
+  font-size: 3.5rem;
+}
+
+/*==================== about section ====================*/
+
+.about .container {
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
