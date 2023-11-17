@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -31,42 +31,7 @@ header {
   width: 145px;
   text-align: center;
   position: relative;
-  animation: text-typing all 3s linear infinite alternate slidein;;
   overflow: hidden;
-  
-}
-
-@keyframes text-typing {
-  0%{
-    .text-typing{
-      width: 145px;
-    }
-  }
-  20%{
-    .text-typing{
-      width: 120px;
-    }
-  }
-  40%{
-    .text-typing{
-      width: 100px;
-    }
-  }
-  60%{
-    .text-typing{
-      width: 70px;
-    }
-  }
-  80%{
-    .text-typing{
-      width: 30px;
-    }
-  }
-  100%{
-    .text-typing{
-      width: 0px;
-    }
-  }
 }
 
 .text-container h1 {
@@ -79,7 +44,9 @@ header {
   background-color: #fff;
 }
 
+.about-img img {
 
+}
 
 
 
