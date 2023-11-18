@@ -10,6 +10,9 @@ body {
 }
 
 /*==================== header section ====================*/
+nav {
+  z-index: 9999;
+}
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show,
@@ -44,18 +47,64 @@ header {
   background-color: #fff;
 }
 
-.about-img img {
-
+.p-title {
+  position: relative;
 }
 
+.about-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100px;
+  height: 3px;
+  background-color: #0078FF;
+}
 
+/*==================== services section ====================*/
 
+.services-title {
+  position: relative;
+}
 
+.services-title-p::after {
+  content: "";
+  position: absolute;
+  left: calc(50%);
+  transform: translate(-50%);
+  bottom: -18px;
+  width: 100px;
+  height: 3px;
+  background-color: #0078FF;
+}
 
+.card {
+  padding: 40px 30px;
+}
 
+.card .icon .service-icon{
+  font-size: 30px;
+  transition: all .4s ease-in-out;
+}
 
+.card .icon .circle {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 10px solid #0078FF;
+  /* outline: 10px solid #CDE1F8; */
+  border-radius: 50%;
+  padding: 14px;
+  transition: all .4s ease-in-out;
+}
 
+.card .icon .circle:hover {
+  border: 10px solid #CDE1F8;
+  background-color: #0078FF;
+}
 
-
+.card .icon .circle:hover .service-icon {
+  color: #fff;
+}
 
 
