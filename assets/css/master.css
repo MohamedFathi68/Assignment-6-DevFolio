@@ -98,12 +98,12 @@ header {
   transition: all .4s ease-in-out;
 }
 
-.card .icon .circle:hover {
+.card:hover .circle{
   border: 10px solid #CDE1F8;
   background-color: #0078FF;
 }
 
-.card .icon .circle:hover .service-icon {
+.card:hover .service-icon {
   color: #fff;
 }
 
