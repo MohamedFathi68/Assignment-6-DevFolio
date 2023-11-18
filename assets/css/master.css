@@ -107,4 +107,35 @@ header {
   color: #fff;
 }
 
+/*==================== clients section ====================*/
+
+.work {
+  min-height: 70vh;
+  background-image: linear-gradient(#0077ff79, #0077ff79) , url(../img/counters-bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.word div {
+  height: 100%;
+}
+
+.client .icon .circle {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: 10px solid #CDE1F8;
+  /* outline: 10px solid #CDE1F8; */
+  border-radius: 50%;
+  padding: 14px;
+}
+
+
+
+
+
+
+
+
 
