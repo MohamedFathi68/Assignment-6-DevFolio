@@ -221,28 +221,45 @@ header {
   box-shadow: 0 13px 8px -10px #0000001a
 }
 
+.message, .info {
+  position: relative;
+}
+
+.send::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 100px;
+  height: 3px;
+  background-color: #0078FF;
+}
+
+textarea {
+  resize: both;
+  height: 150px;
+}
+
 ul {
   list-style: none;
   padding: 0;
+} 
+
+.social li:hover {
+  background-color: #0062D3;
+  color: #fff;
+  border-color: #AFD5FF;
 }
 
-
-
-
-
-
-
-
-
+.social li {
+  width: 50px;
+  height: 50px;
+}
 
 /*==================== footer section ====================*/
+
 footer {
   min-height: 30vh;
   background-color: #0062D3;
 }
-
-
-
-
-
 
