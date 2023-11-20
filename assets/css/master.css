@@ -221,7 +221,10 @@ header {
   box-shadow: 0 13px 8px -10px #0000001a
 }
 
-
+ul {
+  list-style: none;
+  padding: 0;
+}
 
 
 
