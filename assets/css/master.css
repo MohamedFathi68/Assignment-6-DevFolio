@@ -168,12 +168,46 @@ header {
   scale: 1.1;
 }
 
+/*==================== carousel section ====================*/
 
+.carousel {
+  min-height: 100vh;
+  background-image: linear-gradient(#0077ffcc, #0077ffcc) , url(../img/overlay-bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
 
+.carousel-inner {
+  top: 100px;
+}
 
+/*==================== blog section ====================*/
 
+.blog-title {
+  position: relative;
+}
 
+.blog-title-p::after {
+  content: "";
+  position: absolute;
+  left: calc(50%);
+  transform: translate(-50%);
+  bottom: -18px;
+  width: 100px;
+  height: 3px;
+  background-color: #0078FF;
+}
 
+.blog .card {
+  padding: 0px;
+}
 
+.card-footer {
+  height: 45px;
+}
 
+.card-footer img {
+  height: 30px;
+}
 
