@@ -11,8 +11,9 @@
   </head>
   <body>
     <!--^==================== header section ====================^-->
-    <header>
+    <header id="home">
       <nav
+      
         class="navbar navbar-expand-lg bg-black bg-opacity-75 position-fixed w-100 pt-4"
       >
         <div class="container d-flex justify-content-between">
@@ -20,7 +21,7 @@
             <a class="navbar-brand fw-bolder fs-3" href="#">DevFolio</a>
           </div>
           <div class="nav-container">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul id="nav-links" class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active text-uppercase fw-bold" href="#"
                   >Home</a
@@ -85,6 +86,12 @@
                 >
               </li>
             </ul>
+            <a href="#nav-links" class="menu-icon">
+              <i class="fa-solid fa-bars"></i>
+            </a>
+            <a href="#home" class="close-icon">
+              <i class="fa-solid fa-xmark"></i>
+            </a>
           </div>
         </div>
       </nav>

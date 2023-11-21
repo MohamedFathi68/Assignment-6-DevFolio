@@ -2,11 +2,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 /*==================== header section ====================*/
@@ -25,7 +25,14 @@ header {
   background-image: url(../img/hero-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   color: #fff;
+}
+
+.nav-list {
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
 }
 
 .text-typing {
@@ -39,6 +46,68 @@ header {
 
 .text-container h1 {
   font-size: 3.5rem;
+}
+
+.menu-icon {
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.nav-container {
+  position: relative;
+}
+
+body:has(.navbar-nav:target) nav {
+  height: 100vh;
+  background-color: #000;
+}
+
+body:has(.navbar-nav:target) .navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+body:has(.navbar-nav:target) .menu-icon {
+  display: none;
+}
+body:has(.navbar-nav:target) .close-icon {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    display: none;
+    position: absolute;
+    width: 350px;
+    text-align: center;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+  }
+  .close-icon {
+    display: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    line-height: 0;
+    transition: 0.5s;
+  }
+
+  .menu-icon:visited .navbar-nav {
+    display: block;
+  }
 }
 
 /*==================== about section ====================*/
@@ -58,7 +127,7 @@ header {
   bottom: -8px;
   width: 100px;
   height: 3px;
-  background-color: #0078FF;
+  background-color: #0078ff;
 }
 
 /*==================== services section ====================*/
@@ -75,32 +144,32 @@ header {
   bottom: -18px;
   width: 100px;
   height: 3px;
-  background-color: #0078FF;
+  background-color: #0078ff;
 }
 
 .card {
   padding: 40px 30px;
 }
 
-.card .icon .service-icon{
+.card .icon .service-icon {
   font-size: 30px;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .card .icon .circle {
   display: inline-block;
   width: 80px;
   height: 80px;
-  border: 10px solid #0078FF;
+  border: 10px solid #0078ff;
   /* outline: 10px solid #CDE1F8; */
   border-radius: 50%;
   padding: 14px;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-.card:hover .circle{
-  border: 10px solid #CDE1F8;
-  background-color: #0078FF;
+.card:hover .circle {
+  border: 10px solid #cde1f8;
+  background-color: #0078ff;
 }
 
 .card:hover .service-icon {
@@ -111,7 +180,8 @@ header {
 
 .work {
   min-height: 70vh;
-  background-image: linear-gradient(#0077ff79, #0077ff79) , url(../img/counters-bg.jpg);
+  background-image: linear-gradient(#0077ff79, #0077ff79),
+    url(../img/counters-bg.jpg);
   background-position: center;
   background-attachment: fixed;
   color: #fff;
@@ -125,7 +195,7 @@ header {
   display: inline-block;
   width: 80px;
   height: 80px;
-  border: 10px solid #CDE1F8;
+  border: 10px solid #cde1f8;
   /* outline: 10px solid #CDE1F8; */
   border-radius: 50%;
   padding: 14px;
@@ -145,7 +215,7 @@ header {
   bottom: -18px;
   width: 100px;
   height: 3px;
-  background-color: #0078FF;
+  background-color: #0078ff;
 }
 
 .add-btn {
@@ -153,11 +223,11 @@ header {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 3px solid #0078FF;
+  border: 3px solid #0078ff;
 }
 
 .portfolio-card img {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .img-con {
@@ -172,7 +242,8 @@ header {
 
 .carousel {
   min-height: 100vh;
-  background-image: linear-gradient(#0077ffcc, #0077ffcc) , url(../img/overlay-bg.jpg);
+  background-image: linear-gradient(#0077ffcc, #0077ffcc),
+    url(../img/overlay-bg.jpg);
   background-position: center;
   background-attachment: fixed;
   color: #fff;
@@ -196,7 +267,7 @@ header {
   bottom: -18px;
   width: 100px;
   height: 3px;
-  background-color: #0078FF;
+  background-color: #0078ff;
 }
 
 .blog .card {
@@ -215,24 +286,26 @@ header {
 
 .contact {
   min-height: 100vh;
-  background-image: linear-gradient(#0077ff79, #0077ff79) , url(../img/overlay-bg.jpg);
+  background-image: linear-gradient(#0077ff79, #0077ff79),
+    url(../img/overlay-bg.jpg);
   background-position: center;
   background-attachment: fixed;
-  box-shadow: 0 13px 8px -10px #0000001a
+  box-shadow: 0 13px 8px -10px #0000001a;
 }
 
-.message, .info {
+.message,
+.info {
   position: relative;
 }
 
-.send::after{
+.send::after {
   content: "";
   position: absolute;
   left: 0;
   top: 45px;
   width: 100px;
   height: 3px;
-  background-color: #0078FF;
+  background-color: #0078ff;
 }
 
 textarea {
@@ -243,12 +316,12 @@ textarea {
 ul {
   list-style: none;
   padding: 0;
-} 
+}
 
 .social li:hover {
-  background-color: #0062D3;
+  background-color: #0062d3;
   color: #fff;
-  border-color: #AFD5FF;
+  border-color: #afd5ff;
 }
 
 .social li {
@@ -260,6 +333,5 @@ ul {
 
 footer {
   min-height: 30vh;
-  background-color: #0062D3;
+  background-color: #0062d3;
 }
-
